@@ -16,17 +16,17 @@ class StorageModel extends HiveObject {
   @HiveField(0)
   DateTime? lastApiSynchronized;
   @HiveField(1)
-  bool? lastStorageUpdated;
+  DateTime? lastStorageUpdated;
   @HiveField(2)
   List<TodoModel>? todos;
   @HiveField(3)
-  List<int>? updateTodoIds;
+  List<String>? updateTodoIds;
 
   StorageModel copyWith({
     DateTime? lastApiSynchronized,
-    bool? lastStorageUpdated,
+    DateTime? lastStorageUpdated,
     List<TodoModel>? todos,
-    List<int>? updateTodoIds,
+    List<String>? updateTodoIds,
   }) {
     return StorageModel(
       lastApiSynchronized: lastApiSynchronized ?? this.lastApiSynchronized,

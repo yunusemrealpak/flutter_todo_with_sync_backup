@@ -6,7 +6,7 @@ part 'todo_model.g.dart';
 @freezed
 class TodoModel with _$TodoModel {
   const factory TodoModel({
-    int? id,
+    String? id,
     String? title,
     String? description,
     bool? isCompleted,

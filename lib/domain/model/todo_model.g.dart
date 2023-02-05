@@ -7,7 +7,7 @@ part of 'todo_model.dart';
 // **************************************************************************
 
 _$_TodoModel _$$_TodoModelFromJson(Map<String, dynamic> json) => _$_TodoModel(
-      id: json['id'] as int?,
+      id: json['id'] as String?,
       title: json['title'] as String?,
       description: json['description'] as String?,
       isCompleted: json['isCompleted'] as bool?,

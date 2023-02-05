@@ -18,9 +18,9 @@ class StorageModelAdapter extends TypeAdapter<StorageModel> {
     };
     return StorageModel(
       lastApiSynchronized: fields[0] as DateTime?,
-      lastStorageUpdated: fields[1] as bool?,
+      lastStorageUpdated: fields[1] as DateTime?,
       todos: (fields[2] as List?)?.cast<TodoModel>(),
-      updateTodoIds: (fields[3] as List?)?.cast<int>(),
+      updateTodoIds: (fields[3] as List?)?.cast<String>(),
     );
   }
 

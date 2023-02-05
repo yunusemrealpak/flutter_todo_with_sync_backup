@@ -20,7 +20,7 @@ TodoModel _$TodoModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$TodoModel {
-  int? get id => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   bool? get isCompleted => throw _privateConstructorUsedError;
@@ -36,7 +36,8 @@ abstract class $TodoModelCopyWith<$Res> {
   factory $TodoModelCopyWith(TodoModel value, $Res Function(TodoModel) then) =
       _$TodoModelCopyWithImpl<$Res, TodoModel>;
   @useResult
-  $Res call({int? id, String? title, String? description, bool? isCompleted});
+  $Res call(
+      {String? id, String? title, String? description, bool? isCompleted});
 }
 
 /// @nodoc
@@ -61,7 +62,7 @@ class _$TodoModelCopyWithImpl<$Res, $Val extends TodoModel>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -85,7 +86,8 @@ abstract class _$$_TodoModelCopyWith<$Res> implements $TodoModelCopyWith<$Res> {
       __$$_TodoModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int? id, String? title, String? description, bool? isCompleted});
+  $Res call(
+      {String? id, String? title, String? description, bool? isCompleted});
 }
 
 /// @nodoc
@@ -108,7 +110,7 @@ class __$$_TodoModelCopyWithImpl<$Res>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -135,7 +137,7 @@ class _$_TodoModel extends _TodoModel {
       _$$_TodoModelFromJson(json);
 
   @override
-  final int? id;
+  final String? id;
   @override
   final String? title;
   @override
@@ -182,7 +184,7 @@ class _$_TodoModel extends _TodoModel {
 
 abstract class _TodoModel extends TodoModel {
   const factory _TodoModel(
-      {final int? id,
+      {final String? id,
       final String? title,
       final String? description,
       final bool? isCompleted}) = _$_TodoModel;
@@ -192,7 +194,7 @@ abstract class _TodoModel extends TodoModel {
       _$_TodoModel.fromJson;
 
   @override
-  int? get id;
+  String? get id;
   @override
   String? get title;
   @override
